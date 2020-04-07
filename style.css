@@ -1,0 +1,153 @@
+*{
+            padding: 0;
+            margin: 0;
+        }
+        ul,li{
+            text-decoration: none;
+        }
+        /*header*/
+        .navbar {
+            border-radius: 0;
+            margin-bottom: 0px;
+        }
+        .navbar-inverse .navbar-toggle,
+        .navbar-inverse .navbar-toggle:focus,
+        .navbar-inverse .navbar-toggle:hover{
+            background-color: #222222;
+            border:0px;
+        }
+        /*background*/
+        body{
+            background-image: url('coding.jpg');
+            /*background-size: cover;*/
+        }
+        /*section*/
+        .intro-title,.tech-title,.pro-title{
+            background-color: white;
+            font-size: 35px;    
+            text-align: center;
+            padding: 7px 0;
+            font-weight: bold;
+        }
+        /*introduction*/
+        .intro{
+            overflow: hidden;
+            margin: 100px 0;
+        }
+        .intro-img{
+            float: left;
+            text-align: center;
+        }
+        .intro-self{
+            float: right;
+            color: white;
+            font-size: 15px;
+            height: 200px;
+            padding-top: 30px;
+        }
+        .intro-img img{
+            text-align: center;
+            width: 150px;
+            height: 200px;
+        }
+        /*Technology*/
+        .Technology{
+            margin: 100px 0;
+        }
+        .tech > p{
+            color: red;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-right: 40px;
+            text-align: right;
+            font-weight: bolder;
+        }
+        .chart{
+            background: conic-gradient(#0378A6 0% 20%, #79D9D9 20% 40%, #D9C45B 40% 60%, #F2785C  60% 80%, #F24738 80% 100%);
+            border-radius : 50%;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .center{
+            background-color: white;
+            border-radius: 50%;
+            width: 175px;
+            height: 175px;
+            position: absolute;
+            left: 63px;
+            top: 63px;
+            text-align: center;
+            line-height: 180px;
+            font-size: 25px;
+        }
+        .chart a{
+            color: white;
+            font-size: 18px;
+        }
+        .chart .la{
+            position: absolute;
+            right: 35px;
+            top:48px;
+        }
+        .chart .db{
+            position: absolute;
+            right: 8px;
+            bottom:105px;
+        }
+        .chart .wa{
+            position: absolute;
+            right: 130px;
+            bottom:20px;
+        }
+        .chart .to{
+            position: absolute;
+            left: 8px;
+            bottom:105px;
+        }
+        .chart .fr{
+            position: absolute;
+            left: 35px;
+            top:48px;
+        }
+        .tech-info{
+            margin: 0 auto;
+            color: white;
+            width: 80%;
+            overflow: hidden;
+        }
+        .tech-info .info-title{
+            float: left;
+        }
+        .tech-info .info-content{
+            margin-top: 20px;
+            float: right;
+        }
+        /*Project*/
+        .pro .pro-0{
+            margin: 100px auto 50px auto;
+            float: none;
+        }
+        .pro-1{
+            padding: 20px;
+            overflow: hidden;
+            border:2px solid white;
+            border-radius: 20px;
+        }
+        .pro-img{
+            float: left;
+        }
+        .pro-img img{
+            /*width: 250px;*/
+            width: 100%;
+            height: 600px;
+        }
+        .pro-info{
+            float: right;
+            color: white;
+        }
+        .pro-info img{
+            width: 100px;
+            float: right;
+        }

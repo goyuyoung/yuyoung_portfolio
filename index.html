@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+   <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                    <a class="navbar-brand" href="#">Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#introduction">소개</a></li>
+                    <li><a href="#Technology">보유기술</a></li>
+                    <li><a href="#Project">프로젝트</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+      <!--introduction-->
+       <div class=" introduction" id="introduction">
+           <div class="intro-title">
+                INTRODUCTION
+           </div>
+           <div class="intro">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-6 col-sm-6 col-xs-10 intro-img">
+                           <img src="go.jpg">
+                       </div>
+                       <div class="col-lg-6 col-sm-6 col-xs-10 intro-self">
+                           <p><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;고유영 (Go Yu Young)</p>
+                           <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;&nbsp;생년월일: 1997년 01월 30일</p>
+                           <p><span class="glyphicon glyphicon-education" aria-hidden="true"></span>&nbsp;&nbsp;남서울대학교 정보통신공학과</p>
+                           <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;010-2045-6369</p>
+                           <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;&nbsp;yooou5369@naver.com</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--Technology-->
+       <div class="Technology" id="Technology">
+           <div class="tech-title">
+               TECHNOLOGY
+           </div>
+           <div class="tech">
+                  <p>* 기술명을 클릭하세요!</p>
+               <div class="chart">
+                   <div class="center">Technologies</div>
+                    <a class="la" onclick="la()">Language</a>
+                    <a class="db" onclick="db()">DBMS</a>
+                    <a class="wa" onclick="wa()">WAS</a>
+                    <a class="to" onclick="to()">TOOL</a>
+                    <a class="fr" onclick="fr()">Framework</a>
+                </div>
+                <div class="info" id="close">
+                </div>
+            </div>
+        </div>
+        <!--Project-->
+        <div class="Project" id="Project">
+           <div class="pro-title">
+               PROJECT
+           </div>
+           <div class="pro">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-11 col-xs-10 pro-0">
+                          <div class="pro-1">
+                               <div class="col-lg-5 col-sm-4 col-xs-12 pro-img">
+                                   <a href="https://github.com/goyuyoung/Project_hotel"><img src="hotelmain.png"></a>
+                               </div>
+                               <div class="col-lg-7 col-sm-8 col-xs-12 pro-info">
+                                   <h1><strong>[호텔 예약 프로그램]</strong></h1><br>
+                                   <p><strong>개발기간 :</strong>&emsp;2019.12.11 ~ 2020.01.14 (약 1달)</p>
+                                   <p><strong>참여 인원 :</strong>&emsp;4명</p>
+                                   <p><strong>개발 환경 :</strong>&emsp;Windows10</p>
+                                   <p><strong>사용 도구 :</strong>&emsp;Eclipse, Sqldeveloper, Bracket, Apache Tomcat</p>
+                                   <p><strong>사용 기술 :</strong>&emsp;Java, Spring, JavaScript, jQuery, MyBatis, CSS, HTML, Bootstrap</p>
+                                   <p><strong>담당 업무 :</strong></p>
+                                   <p>[디자인]</p>
+                                   <p>&emsp;-메인 화면</p>
+                                   <p>&emsp;-관리자 페이지</p>
+                                   <p>[개발]</p>
+                                   <p>&emsp;-객실 관리 (등록, 수정, 삭제)</p>
+                                   <p>&emsp;-부대시설 관리 (등록, 수정, 삭제)</p>
+                                   <p>&emsp;-예약 객실 배정</p>
+                                   <p>&emsp;-예약 관리 (예약 취소, 수정)</p>
+                                   <p>&emsp;-날씨 API 사용</p>
+                                   <p>&emsp;-Kakao 지도 API 사용</p>
+                                   <a href="https://github.com/goyuyoung/Project_hotel"><img src="GitHub_Logo_White.png"></a>
+                               </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+            
+        </div>
+    </section>
+    
+</body>
+    <script>
+        /*Technology*/
+        function la() {
+        $(".info").html("<div class='tech-info'>"
+                                +"<h1>Language</h1>"
+                                +"<div class='container' style='margin-bottom: 50px;'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[JAVA]</h3>"
+                                +"</div>"
+                                +"<div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- 자바 문법 습득</p>"
+                                +"<p>- JDBC 개념 이해 및 데이터베이스와 연동</p>"
+                                +"<p>- 이벤트의 개념과 이벤트 처리 방식의 이해 및 활용 가능</p>"
+                                +"<p>- 간단한 계산기 구현</p>"
+                                +"<p>- 예약 프로그램 홈페이지 구현</p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +" <div class='container'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[JSP]</h3>"
+                                +"</div>"
+                                +"<div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- Java Bean을 활용</p>"
+                                +"<p>- Set/Get 메소드를 이용해 DB와 연동하여 DB 입출력</p>"
+                                +"<p>- Model1 / Model2 기반 개발 </p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>");
+		 if($(".info").attr('id') == "close" || $(".info").attr('id') == "db" || $(".info").attr('id') == "wa" || $(".info").attr('id') == "to" || $(".info").attr('id') == "fr"){
+			 $(".info").attr("id","la");
+			$(".info").css("display","block");
+		}else{
+			$(".info").attr("id","close");
+			$(".info").css("display","none");
+		  } 
+	   }
+        function db() {
+            $(".info").html("<div class='tech-info'>"
+                                +"<h1>DBMS</h1>"
+                                +"<div class='container' style='margin-bottom: 50px;'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[Oracle 11g]</h3>"
+                                +"</div><div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- DB 설치 및 기본 SQL 작성</p>"
+                                +"<p>- DB 모델링 기법 및 정규화</p>"
+                                +"<p>- 트랜잭션의 개념과 처리 방법과 PL/SQL 작성</p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>");
+		 if($(".info").attr('id') == "close" || $(".info").attr('id') == "la" || $(".info").attr('id') == "wa" || $(".info").attr('id') == "to" || $(".info").attr('id') == "fr"){
+			 $(".info").attr("id","db");
+			$(".info").css("display","block");
+		}else{
+			$(".info").attr("id","close");
+			$(".info").css("display","none");
+		  } 
+	   }
+        function wa() {
+            $(".info").html("<div class='tech-info'>"
+                                +"<h1>WAS</h1>"
+                                +"<div class='container' style='margin-bottom: 50px;'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[Tomcat 8.0]</h3>"
+                                +"</div><div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- 서버 구축 작업 및 사용 가능</p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>");
+		 if($(".info").attr('id') == "close" || $(".info").attr('id') == "la" || $(".info").attr('id') == "db" || $(".info").attr('id') == "to" || $(".info").attr('id') == "fr"){
+			 $(".info").attr("id","wa");
+			$(".info").css("display","block");
+		}else{
+			$(".info").attr("id","close");
+			$(".info").css("display","none");
+		  } 
+	   }
+        function to() {
+            $(".info").html("<div class='tech-info'>"
+                                +"<h1>TOOL</h1>"
+                                +"<div class='container' style='margin-bottom: 50px;'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[IDE / DB Tool] </h3>"
+                                +"</div><div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- Eclipse를 이용한 자바 코드 작성</p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>");
+		 if($(".info").attr('id') == "close" || $(".info").attr('id') == "la" || $(".info").attr('id') == "db" || $(".info").attr('id') == "wa" || $(".info").attr('id') == "fr"){
+			 $(".info").attr("id","to");
+			$(".info").css("display","block");
+		}else{
+			$(".info").attr("id","close");
+			$(".info").css("display","none");
+		  } 
+	   }
+        function fr() {
+        $(".info").html("<div class='tech-info'>"
+                                +"<h1>Framework</h1>"
+                                +"<div class='container' style='margin-bottom: 50px;'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[myBATIS]</h3>"
+                                +"</div>"
+                                +"<div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- MVC 패턴 및 myBATIS 연동 가능</p>"
+                                +"<p>- XML을 통해 SQL statement에 매핑 가능</p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +" <div class='container'>"
+                                +"<div class='row'>"
+                                +"<div class='col-lg-5 col-xs-10 info-title'>"
+                                +"<h3>[Spring]</h3>"
+                                +"</div>"
+                                +"<div class='col-lg-7 col-xs-10 info-content'>"
+                                +"<p>- 어노테이션 기반 Controller 구현 가능</p>"
+                                +"<p>- Spring MVC패턴 이용 WebApp 제작</p>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>");
+		 if($(".info").attr('id') == "close" || $(".info").attr('id') == "la" || $(".info").attr('id') == "db" || $(".info").attr('id') == "wa" || $(".info").attr('id') == "to"){
+			 $(".info").attr("id","fr");
+			$(".info").css("display","block");
+		}else{
+			$(".info").attr("id","close");
+			$(".info").css("display","none");
+		  } 
+	   }
+    </script>
+</html>
