@@ -6,6 +6,12 @@
             text-decoration: none;
         }
         /*header*/
+        header{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 99;
+        }	
         .navbar {
             border-radius: 0;
             margin-bottom: 0px;
@@ -22,6 +28,9 @@
             /*background-size: cover;*/
         }
         /*section*/
+        section{
+            margin-top: 50px;
+        }        
         .intro-title,.tech-title,.pro-title{
             background-color: white;
             font-size: 35px;    
