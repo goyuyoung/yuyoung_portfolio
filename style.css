@@ -134,11 +134,11 @@
             float: right;
         }
         /*Project*/
-        .pro .pro-0{
+        .pro .pro-1, .pro-2{
             margin: 100px auto 50px auto;
             float: none;
         }
-        .pro-1{
+        .pro-c{
             padding: 20px;
             overflow: hidden;
             border:2px solid white;
